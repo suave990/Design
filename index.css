@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.whole {
+  max-width: 90%;
+  margin: auto;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  box-shadow: 0 15px 50px -15px rgba(94, 94, 95, 0.5);
+}
+.logo {
+  height: 35px;
+  width: 35px;
+  background-color: #0004;
+
+  border-radius: 100px;
+}
+.logo svg {
+  height: 100%;
+  width: 100%;
+  translate: 40%;
+}
+svg,
+svg * {
+  color: inherit;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+.cards {
+  box-shadow: 0.2rem;
+  display: flex;
+  justify-content: center;
+  margin-block: 15vh;
+}
+.cards > *:nth-child(2) {
+  background-color: rgb(32, 106, 90);
+}
+.cards > *:nth-child(3) {
+  background-color: rgb(16, 85, 70);
+}
+.card {
+  background-color: orange;
+  height: 55vh;
+  width: 35vh;
+  color: whitesmoke;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+p {
+  flex: 1;
+  font-size: 0.8em;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: lighter;
+  font-family: 'Teko';
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  width: 9em;
+  background-color: white;
+  color: orange;
+}
+.cards > *:nth-child(2) button {
+  color: rgb(32, 106, 90);
+}
+.cards > *:nth-child(3) button {
+  color: rgb(16, 85, 70);
+}
+@media screen and (max-width: 700px) {
+  .whole {
+    padding-block: 20px;
+    display: block;
+    max-width: 70%;
+    border-radius: 5px;
+  }
+  .cards {
+    flex-direction: column;
+    /* align-items: center; */
+    contain: content;
+    border-radius: 10px;
+    margin: auto;
+    width: 90%;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}
